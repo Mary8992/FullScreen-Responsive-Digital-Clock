@@ -15,6 +15,11 @@ function clock() {
         var am = "PM"
     }
 
+    //add 0 to the begining of number if number is less than 10
+    h = (h < 10) ? '0' + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+
     hours.innerHTML = h;
     minutes.innerHTML = m;
     seconds.innerHTML = s;
